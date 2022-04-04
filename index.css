@@ -1,0 +1,113 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+}
+
+/* Navbar */
+
+a{
+    color:black;
+    font-weight: bold;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    z-index: 1000;
+    /* border: 1px solid slateblue; */
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+    width: 200px;
+
+}
+
+.nav-links a{
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.weather-link{
+    text-decoration: none;
+}
+
+.weather{
+    padding-left: 15px;
+    display: flex;
+    /* border: 2px solid fuchsia; */
+    width: 65px;
+}
+
+.wi{
+    display: none;
+}
+
+/* Hero */
+
+.hero{
+    background-image: url("./images/sunset-cropped-flipped-3.png") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.hero-container{
+    max-width: 865px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+
+.hero-text{
+    position: relative;
+    top: 20px;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 600;
+
+}
+
+.tamarindo-text{
+    font-size: 96px;
+    text-transform: uppercase;
+    /* font-weight: ; */
+}
+
+.call-to-action{
+    position: absolute;
+    right: 0px;
+    top: 220px;
+
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background: rgba(0, 0, 0, .8);
+    padding: 25px 40px;
+}
+
+@media (max-width: 875px){
+    .hero-container{
+        margin: 0 20px;
+    }
+}
