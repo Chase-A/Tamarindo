@@ -59,6 +59,12 @@ nav{
     display: none;
 }
 
+/* Navbar Alternate */
+
+.nav-image{
+    background: url(./images/sunset-cropped-flipped-3.png);
+}
+
 /* Hero */
 
 .hero{
